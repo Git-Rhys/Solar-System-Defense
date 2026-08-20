@@ -1,0 +1,41 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header h1 {
+  margin: 20px 0;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Game iframe */
+iframe {
+  width: 100%;          /* fills screen width */
+  max-width: 480px;     /* Scratch default stage size */
+  aspect-ratio: 4 / 3;  /* keeps proportions */
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+
+/* Scale up for larger screens */
+@media (min-width: 600px) {
+  iframe {
+    max-width: 800px;   /* bigger stage for tablets/desktops */
+  }
+}
